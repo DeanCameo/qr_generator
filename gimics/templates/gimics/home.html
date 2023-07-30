@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="/static/gimics/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; /* Remove default margin */
+        }
+
+        .logo-container {
+            position: sticky;
+            top: 0;
+            background-color: #000000;
+            padding: 5px;
+            text-align: left;
+        }
+
+        .logo-image {
+            width: 60px; /* Adjust the width as per your logo size */
+            height: auto; /* This ensures the aspect ratio is maintained */
+        }
+
+        .logo-link {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #444;
+            margin-top: 0; /* Add margin-top here instead of body */
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        hr {
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        .image-section {
+            background-color: #101010;
+        }
+
+        .features-section {
+            background-color: #444;
+            padding: 20px;
+        }
+
+        .features-list {
+            list-style-type: disc;
+            padding-left: 30px;
+        }
+
+        .links-section {
+            background-color: #1d1d1d;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #62666b;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .link:hover {
+            background-color: #4b4e51;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #444;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <a href="http://127.0.0.1:8000/home/" class="logo-link">
+            <img src="/static/gimics/logo.jpg" alt="Logo" class="logo-image">
+        </a>
+    </div>
+
+    <header>
+        <h1>Welcome to the QR Generator!</h1>
+        <hr>
+    </header>
+
+    <section class="image-section">
+        <img src="/static/gimics/qr_robot.jpg" alt="png" width="600" height="600">
+    </section>
+
+    <section class="features-section">
+        <h2>Features</h2>
+        <ul class="features-list">
+            <h4>Create & Generate QR codes from text, images, or URLs and Download QR codes as images</h4>
+        </ul>
+    </section>
+
+    <section class="links-section">
+        <h2>Want To Try?</h2>
+        <div class="links-container">
+            <a class="link" href="http://127.0.0.1:8000/qr_code/">Generate QR</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 D.Cameo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
